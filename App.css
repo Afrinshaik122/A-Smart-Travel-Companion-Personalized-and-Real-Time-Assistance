@@ -1,0 +1,5 @@
+/* Ensure content does not overlap with fixed navbar */
+.main-content {
+  margin-top: 40px; /* Adjust based on Navbar height */
+  padding: 20px;
+}

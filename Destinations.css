@@ -1,0 +1,191 @@
+.mandatory {
+    color: red;
+    font-size: 1.2em;
+}
+
+.destinations {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.destinations .secTitle {
+    text-align: center;
+}
+
+.destinations .secTitle .highlightText {
+    color: #ff6f61;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.destinations .secTitle h3 {
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.destinations .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1500px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.destinations .container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 20px;
+    max-width: 1100px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    .destinations .container .form {
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+.destinations .container .form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.destinations .container .form .form-group label {
+    font-size: 1rem;
+    color: #555;
+}
+
+.destinations .container .form .form-group input,
+.destinations .container .form .form-group select {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border 0.3s ease;
+}
+
+.destinations .container .form .form-group input:focus,
+.destinations .container .form .form-group select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.destinations .container .form .form-group .suggestions {
+    margin-top: 70px;
+    list-style: none;
+    padding: 0;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 5px;
+    max-height: 150px;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    position: absolute;
+}
+
+.destinations .container .form .form-group .suggestions li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.destinations .container .form .form-group .suggestions li:hover {
+    background: #f1f1f1;
+}
+
+.destinations .container .form button {
+    margin-top: 25px;
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.destinations .container .form button:hover {
+    background-color: #0056b3;
+}
+
+@media (min-width: 768px) {
+    .destinations .container .form button {
+        flex: 0 1 auto;
+        max-width: 150px;
+    }
+}
+
+.destinations .restaurant-list {
+    padding: 20px;
+    text-align: center;
+}
+
+.destinations .restaurant-list h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.destinations .restaurant-list .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.destinations .restaurant-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.destinations .restaurant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.destinations .restaurant-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.destinations .restaurant-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.destinations .restaurant-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.destinations .error-message {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+}
